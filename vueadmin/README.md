@@ -1,3 +1,6 @@
+#特别说明#
+	以下是用近vue 项目的原始框架，我原样保留在这里，但里面的内容我已经删除了，如果需要的话，自行去下载。
+
 # vue-manage-system #
 基于Vue.js 2.x系列 + Element UI 的后台管理系统解决方案。[线上地址](http://blog.gdfengshuo.com/example/work/)
 
