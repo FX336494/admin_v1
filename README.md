@@ -23,6 +23,11 @@
 
 后端用的是yii2，非常强大的框架，扩展性强。
 
+##效果图##
+![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/1.png)
+![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/2.png)
+![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/3.png)
+![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/4.png)
 
 ## 赞赏
 如果你觉得帮助到了你，可以请作者喝杯咖啡！
