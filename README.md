@@ -23,6 +23,7 @@
 
 后端用的是yii2，非常强大的框架，扩展性强。将域名指定apiadmin/web下，做为后台请求接口域名。
 将web/data/v1.sql文件导入你建好的库中即可。。
+。
 
 ##效果图##
 ![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/1.png)
