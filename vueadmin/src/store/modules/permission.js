@@ -1,4 +1,4 @@
-import { asyncRouterMap, constantRouterMap } from '@/router'
+import { constantRouterMap } from '@/router'
 
 function hasPermission(roleRouers)
 {
@@ -17,16 +17,31 @@ function hasPermission(roleRouers)
 
 function getAsyncRouter(roleRouter)
 {
-	const accessedRouters = asyncRouterMap.filter(route =>{
-		if(route['path']==roleRouter['path']){
-			route.pid = roleRouter.pid;
-			route.id = roleRouter.id;
-			return true;
-		}else{
-			return false;
-		}
-	});
-	return accessedRouters[0];
+	if(roleRouter['path'] && !roleRouter.children){
+
+		var arr = roleRouter['path'].split('/');
+		var index = arr[arr.length-1];
+		let routerItems = {
+	            path: roleRouter['path'],
+	            component: getViews(roleRouter['path']),
+	            meta: { title:roleRouter['name']},
+	            index: index,
+	            name: roleRouter['name'],
+		};				
+		return routerItems;
+	}
+	return false;
+
+}
+
+function getViews(path) {
+	if(path.substr(0,1)=='/')  path = path.substr(1);
+
+  return resolve => {
+    require.ensure([], () => {
+      resolve(require(`../../`+path+`.vue`)) 
+    })
+  }
 }
 
 //添加默认的路由
@@ -67,6 +82,7 @@ const permission = {
 	mutations:{
 	    SET_ROUTERS: (state, routers) => {
 	    	let RouterItems = hasPermission(routers);
+	    	// console.log(RouterItems);
 	    	
 	    	//添加两个默认路由
 	    	let roleRouterItems = addDefaultRouter(RouterItems);
