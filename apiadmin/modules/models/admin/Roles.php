@@ -62,10 +62,10 @@ class Roles extends \yii\db\ActiveRecord
 		$role = self::findOne(['id'=>$roleId]);
 		if($roleId=='1'){
 			//这里定死角色id为1的 是超级管理员
-			$where = ['>','id','0'];
+			$where = ['and',"is_menu='1'",['>','id','0']];
 		}else{
 			$ruleIds = explode(',', $role['rule_ids']);
-			$where = ['in','id',$ruleIds];			
+			$where = ['and',"is_menu='1'",['in','id',$ruleIds]];  
 		}
 
 		$data = AuthRule::getAuthRules($where);
