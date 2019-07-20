@@ -32,5 +32,3 @@
 
 ## 赞赏
 如果你觉得帮助到了你，可以请作者喝杯咖啡！
-
-![微信扫一扫](http://pq3ngexnh.bkt.clouddn.com/avatar/1555770989.jpg)

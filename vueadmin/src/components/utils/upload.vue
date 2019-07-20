@@ -90,7 +90,7 @@ export default{
         	this.ifload = true;
             var formdata = new FormData();
             formdata.append('file', file);
-            ajax_upload('common/qiniu',formdata,(res)=>{
+            ajax_upload('common/upload',formdata,(res)=>{
                 console.log(res);
                 this.imgUrl = res.data.url;
                 this.ifload = false;
