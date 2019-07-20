@@ -7,6 +7,16 @@
 
 ## 安装步骤 ##
 
+## git 安装（推荐） ##
+	
+	git clone https://github.com/FX336494/admin_v1.git
+	进入目录
+	cd admin_v1
+
+	composer安装依赖 (没有安装composer的自行安装)
+	composer install
+
+
     cd vueadmin    // 进入模板目录
     npm install         // 安装项目依赖，等待安装完成之后
 
