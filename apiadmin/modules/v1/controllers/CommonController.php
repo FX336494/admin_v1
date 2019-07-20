@@ -27,9 +27,10 @@ class CommonController extends CoreController
 	private function fileUpload()
 	{
 		$basePath = $_SERVER['DOCUMENT_ROOT'];
-		$filePath = $this->getFilePath($this->request('uptype'));		
+		$filePath = $this->getFilePath($this->request('uptype'));
+		$filePath = '/data/'.$filePath; 	
 		$upload = new FileUpload();
-		$res = $upload->upload('file',$basePath.'/data/'.$filePath); 
+		$res = $upload->upload('file',$basePath.$filePath); 
 		if($res){
 			$fileName = $upload->getFileName();
 			$data = array('url'=>'http://'.$_SERVER['HTTP_HOST'].$filePath.'/'.$fileName);
