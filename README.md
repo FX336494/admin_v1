@@ -29,6 +29,8 @@
 ![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/2.png)
 ![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/3.png)
 ![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/4.png)
+![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/5.png)
 
 ## 赞赏
-如果你觉得帮助到了你，可以请作者喝杯咖啡！
+如果你觉得帮助到了你，可以请作者喝杯咖啡！ 微信号 mxf2252599083
+![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/6.png)
