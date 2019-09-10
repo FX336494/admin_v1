@@ -38,7 +38,7 @@ class Roles extends \yii\db\ActiveRecord
 	/*
 		角色权限
 	*/
-	public static function getRolesRules($roleId)
+	public static function getRolesRules($roleId,$isTree=false)
 	{
 		$role = self::findOne(['id'=>$roleId]);
 		if($roleId=='1'){
@@ -50,6 +50,7 @@ class Roles extends \yii\db\ActiveRecord
 		}
 
 		$data = AuthRule::getAuthRules($where);	
+		if($isTree) $data = self::getTree($data); 
 		return $data;	
 	}
 
@@ -123,7 +124,7 @@ class Roles extends \yii\db\ActiveRecord
 		$createRole = self::findOne(['id'=>$createUser['role_id']]);
 
 		//获取创建人所拥有的权限
-		$authRuleTree = self::getRolesRulesTree($createRole['id']);	
+		$authRuleTree = self::getRolesRules($createRole['id'],true);	
 
 		//返回所有可显示的权限  和 当前角色所拥有的权限
 		return array('auth_tree'=>$authRuleTree,'role_auth'=>$curRules);

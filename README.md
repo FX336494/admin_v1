@@ -44,6 +44,6 @@ vue路由不需要在前端文件中添加，只需要在菜单操作处，将�
 ![Image text](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/5.png)
 
 ## 赞赏
-如果你觉得帮助到了你，可以请作者喝杯咖啡！ 微信号 mxf2252599083
+如果你觉得帮助到了你，可以请作者喝杯咖啡
 
 ![微信扫一扫](https://raw.githubusercontent.com/FX336494/admin_v1/master/apiadmin/web/data/6.png)
