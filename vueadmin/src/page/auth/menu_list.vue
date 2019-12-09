@@ -208,6 +208,7 @@
             //添加字菜单
             addSub(index,row){
                 this.form.pid = row.id;
+                this.form.id = 0;
                 this.id = 0;
                 this.handleAdd();
             },
