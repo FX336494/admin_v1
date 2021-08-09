@@ -1,5 +1,4 @@
-新版功能更强大，实现了自动页面生成，接口权限控制等功能
-地址 https://gitee.com/mxf_xixi/fxadmin
+### 新版功能更强大，实现了自动页面生成，接口权限控制等功能	地址 https://gitee.com/mxf_xixi/fxadmin
 
 一个 yii2 + vue的 后台权限管理系统。
 这个是一个简单的基础版，里面只有权限管理，不涉及其它的内容
